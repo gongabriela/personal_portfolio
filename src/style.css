@@ -1,0 +1,29 @@
+.cabecalho {
+    display: flex; 
+    align-items: center;
+    gap: 60px; /*entre a foto e o texto*/
+    background-color: lightblue;
+    padding: 20px; /*espaço interno porque a imagem estava colando na borda*/
+    border: 3px darkblue solid;
+    border-radius: 30px; /*aqui usamos px porque queremos um arredondamento consistente*/
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /*transforma o quadrado em círculo*/
+    border: 3px darkblue solid;
+}
+
+.meu-texto h1 {
+    color: darkblue;
+    margin: 0; /*remove espaços estranhos padrão do navegador*/
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.meu-texto p {
+    color: darkblue;
+    font-size: 1.5rem;
+    margin: 5px 0 0 0; /*espaço acima do parágrafo*/
+}
