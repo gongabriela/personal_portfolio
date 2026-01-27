@@ -27,3 +27,30 @@
     font-size: 1.5rem;
     margin: 5px 0 0 0; /*espaço acima do parágrafo*/
 }
+
+main {
+    margin-top: 40px; /*para separar o cabeçalho do resto da página*/
+}
+
+.sobre-mim {
+    border: 2px darkblue solid;
+    background-color: lightblue;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sobre-mim h2 {
+    color: darkblue;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.sobre-mim p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: justify;
+    color: #333;
+}

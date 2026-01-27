@@ -26,3 +26,8 @@
 
 ### alinhar foto e bloco de texto lado a lado com o flexbox
 
+### rem e pix
+
+- rem é flexivel e o px é fixo. usamos rem para partes do html onde sabemos que o navegador vai "se meter"
+
+## div vs section
