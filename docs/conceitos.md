@@ -31,3 +31,12 @@
 - rem é flexivel e o px é fixo. usamos rem para partes do html onde sabemos que o navegador vai "se meter"
 
 ## div vs section
+
+## implementacoes a fazer
+
+- menu lateral com os links para cada card de projeto
+- pagina inteira para cada projeto, com:
+    - um video demonstrando o programa a rodar
+    - um wiki com resumo dos conceitos aprendidos
+    - um guiao para os projetos da 42 para ajudar outros alunos
+- links para linkedin e email no header
