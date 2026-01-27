@@ -22,6 +22,26 @@
     --fonte-texto: 'Inter', sans-serif;
 }
 
+/*---------------------------------------- DEFINICOES TAGS ----------------------------------------*/
+
+body {
+    background-color: var(--cor-fundo-pagina);
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte-texto);
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-banana);
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
 /*---------------------------------------- CABEÇALHO ----------------------------------------*/
 
 .cabecalho {
