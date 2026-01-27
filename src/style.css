@@ -1,3 +1,5 @@
+/*---------------------------------------- CABEÇALHO ----------------------------------------*/
+
 .cabecalho {
     display: flex; 
     align-items: center;
@@ -32,6 +34,7 @@ main {
     margin-top: 40px; /*para separar o cabeçalho do resto da página*/
 }
 
+/*---------------------------------------- SOBRE MIM ----------------------------------------*/
 .sobre-mim {
     border: 2px darkblue solid;
     background-color: lightblue;
@@ -53,4 +56,112 @@ main {
     line-height: 1.6rem;
     text-align: justify;
     color: #333;
+}
+
+/*---------------------------------------- PROJETOS 42 ----------------------------------------*/
+
+.titulo-projetos-42 {
+    text-transform: uppercase;
+    color: darkblue;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.projeto-42 {
+    display: grid; /*usando o grid para dividir o card em 2 colunas*/
+    grid-template-columns: 1fr 3fr; /* Coluna da esquerda (1 parte) e Coluna da direita (3 partes) */
+    border: 3px solid darkblue;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden; /* Garante que o fundo azul não saia das bordas arredondadas */
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+.lado-esquerdo {
+    background-color: lightblue;
+    border-right: 3px solid darkblue; /* Linha divisória vertical */
+    padding: 20px;
+    
+    /* Usamos FLEX para centrar a imagem e o botão verticalmente */
+    display: flex;
+    flex-direction: column; /* Um embaixo do outro */
+    align-items: center;    /* Centrado horizontalmente */
+    justify-content: center; /* Centrado verticalmente */
+    gap: 15px;
+}
+
+.img-projeto-42 {
+    width: 100%;
+    max-width: 200px; /* Impede que a imagem fique gigante */
+    border-radius: 10px;
+    border: 2px solid darkblue;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.2); /* Sombra simples */
+}
+
+/* Estilo do Botão do Repositório */
+.btn-repo {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none; /* Tira o sublinhado do link */
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-repo:hover {
+    background-color: blue; /* Muda de cor quando passa o rato */
+}
+
+.lado-direito {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre o topo, o meio e o baixo */
+}
+
+.info-topo h3 {
+    margin: 0;
+    font-size: 2rem;
+    color: darkblue;
+}
+.definicao {
+    color: gray;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* 4. O MEIO (grid dentro de grid) */
+/* divisão: explicação à esquerda, conceitos à direita */
+.info-meio {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Explicação ocupa o dobro do espaço dos conceitos */
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Linha fina cinza para separar */
+}
+
+.explicacao p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.conceitos h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: darkblue;
+
+}
+
+.conceitos ul {
+    padding-left: 20px; /* Recuo para a lista */
+    margin-top: 5px;
+}
+
+.info-baixo {
+    display: flex; /* Ícones lado a lado */
+    align-items: center;
+    gap: 10px;
 }
