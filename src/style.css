@@ -48,28 +48,34 @@ main {
     display: flex; 
     align-items: center;
     gap: 60px; /*entre a foto e o texto*/
-    background-color: lightblue;
+    background-color: var(--cor-fundo-card);
     padding: 20px; /*espaço interno porque a imagem estava colando na borda*/
-    border: 3px darkblue solid;
+    border: 3px solid var(--cor-rosa);
     border-radius: 30px; /*aqui usamos px porque queremos um arredondamento consistente*/
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+
+    /*deixar a header to tamanho dos outros cards*/
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px auto;
 }
 
 .foto-perfil {
     width: 150px;
     height: 150px;
     border-radius: 50%; /*transforma o quadrado em círculo*/
-    border: 3px darkblue solid;
+    border: 3px solid var(--cor-azul-ceu);
 }
 
 .meu-texto h1 {
-    color: darkblue;
     margin: 0; /*remove espaços estranhos padrão do navegador*/
     text-transform: uppercase;
     font-size: 2rem;
 }
 
 .meu-texto p {
-    color: darkblue;
+    color: var(--cor-rosa);
     font-size: 1.5rem;
     margin: 5px 0 0 0; /*espaço acima do parágrafo*/
 }
