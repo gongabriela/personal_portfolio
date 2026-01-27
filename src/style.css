@@ -1,3 +1,27 @@
+/*---------------------------------------- ESTILO GLOBAL ----------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700&display=swap');
+
+:root {
+    /* Fundos */
+    --cor-fundo-pagina: #1b182c; /* Roxo Profundo (Deep Space) */
+    --cor-fundo-card: #282440;   /* Roxo um pouco mais claro para destacar os cards */
+    --cor-borda: #454158;        /* Roxo acinzentado para bordas subtis */
+    
+    /* Cores de Destaque */
+    --cor-rosa: #ff95d6;         /* Rose Pink (Para bordas principais e destaques) */
+    --cor-azul-ceu: #8be9fd;     /* Sky Blue (Para links, botões e ícones) */
+    --cor-banana: #ffe97d;       /* Banana Yellow (Para Títulos principais) */
+    --cor-roxo-claro: #bd93f9;   /* Light Purple (Para subtítulos) */
+    
+    /* Texto */
+    --cor-texto-principal: #e0def4; /* Branco sujo/acinzentado (Melhor para leitura) */
+    
+    /* Fontes */
+    --fonte-titulo: 'Outfit', sans-serif;
+    --fonte-texto: 'Inter', sans-serif;
+}
+
 /*---------------------------------------- CABEÇALHO ----------------------------------------*/
 
 .cabecalho {
