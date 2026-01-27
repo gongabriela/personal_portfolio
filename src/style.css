@@ -86,15 +86,16 @@ main {
 
 /*---------------------------------------- SOBRE MIM ----------------------------------------*/
 .sobre-mim {
-    border: 2px darkblue solid;
-    background-color: lightblue;
+    border: 2px solid (--cor-borda);
+    background-color: var(--cor-fundo-card);
     border-radius: 20px;
     padding: 20px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .sobre-mim h2 {
-    color: darkblue;
+    color: var(--cor-roxo-claro);
+    border-bottom: 1px solid var(--cor-borda);
+    padding-bottom: 15px;
     margin-top: 0;
     text-transform: uppercase;
     font-size: 1.8rem;
@@ -105,7 +106,7 @@ main {
     font-size: 1.2rem;
     line-height: 1.6rem;
     text-align: justify;
-    color: #333;
+    color: (--cor-texto-principal);
 }
 
 /*---------------------------------------- PROJETOS 42 ----------------------------------------*/
