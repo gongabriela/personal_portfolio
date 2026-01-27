@@ -5,7 +5,8 @@
 :root {
     /* Fundos */
     --cor-fundo-pagina: #1b182c; /* Roxo Profundo (Deep Space) */
-    --cor-fundo-card: #282440;   /* Roxo um pouco mais claro para destacar os cards */
+    --cor-fundo-card: #282440; 
+    --cor-fundo-card-esquerdo: #211e33;  /* Roxo um pouco mais claro para destacar os cards */
     --cor-borda: #454158;        /* Roxo acinzentado para bordas subtis */
     
     /* Cores de Destaque */
@@ -113,26 +114,27 @@ main {
 
 .titulo-projetos-42 {
     text-transform: uppercase;
-    color: darkblue;
+    color: var(--cor-banana);
     margin-top: 40px;
     margin-bottom: 20px;
     font-size: 1.8rem;
+    border-left: 5px solid var(--cor-rosa);
+    padding-left: 15px;
 }
 
 .projeto-42 {
     display: grid; /*usando o grid para dividir o card em 2 colunas*/
     grid-template-columns: 1fr 3fr; /* Coluna da esquerda (1 parte) e Coluna da direita (3 partes) */
-    border: 3px solid darkblue;
+    border: 3px solid var(--cor-borda);
     border-radius: 20px;
-    background-color: white;
+    background-color: var(--cor-fundo-card);
     overflow: hidden; /* Garante que o fundo azul não saia das bordas arredondadas */
     margin-bottom: 30px;
-    font-family: sans-serif;
 }
 
 .lado-esquerdo {
-    background-color: lightblue;
-    border-right: 3px solid darkblue; /* Linha divisória vertical */
+    background-color: var(--cor-fundo-card-esquerdo);
+    border-right: 3px solid var(--cor-borda); /* Linha divisória vertical */
     padding: 20px;
     
     /* Usamos FLEX para centrar a imagem e o botão verticalmente */
@@ -147,23 +149,27 @@ main {
     width: 100%;
     max-width: 200px; /* Impede que a imagem fique gigante */
     border-radius: 10px;
-    border: 2px solid darkblue;
-    box-shadow: 5px 5px 0px rgba(0,0,0,0.2); /* Sombra simples */
+    border: 2px solid var(--cor-borda);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5); /* Sombra simples */
 }
 
 /* Estilo do Botão do Repositório */
 .btn-repo {
-    background-color: darkblue;
-    color: white;
+    background-color: transparent;
+    color: var(--cor-azul-ceu);
+    border: 2px solid var(--cor-azul-ceu);
     padding: 10px 15px;
     text-decoration: none; /* Tira o sublinhado do link */
     border-radius: 5px;
     font-weight: bold;
     text-align: center;
+    transition: 0.3s;
 }
 
 .btn-repo:hover {
-    background-color: blue; /* Muda de cor quando passa o rato */
+    background-color: var(--cor-azul-ceu); /* Muda de cor quando passa o rato */
+    color: var(--cor-fundo-pagina);
+    box-shadow: 0 0 15px var(--cor-azul-ceu);
 }
 
 .lado-direito {
@@ -176,10 +182,10 @@ main {
 .info-topo h3 {
     margin: 0;
     font-size: 2rem;
-    color: darkblue;
 }
+
 .definicao {
-    color: gray;
+    color: var(--cor-roxo-claro);
     font-style: italic;
     margin-top: 5px;
 }
@@ -191,7 +197,7 @@ main {
     grid-template-columns: 2fr 1fr; /* Explicação ocupa o dobro do espaço dos conceitos */
     gap: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #ccc; /* Linha fina cinza para separar */
+    border-bottom: 1px solid var(--cor-borda); /* Linha fina cinza para separar */
 }
 
 .explicacao p {
@@ -202,8 +208,7 @@ main {
 .conceitos h4 {
     margin-top: 0;
     margin-bottom: 0;
-    color: darkblue;
-
+    color: var(--cor-rosa);
 }
 
 .conceitos ul {
@@ -215,4 +220,11 @@ main {
     display: flex; /* Ícones lado a lado */
     align-items: center;
     gap: 10px;
+}
+
+.info-baixo h4 {
+    margin: 0;
+    color: var(--cor-azul-ceu);
+    font-size: 1rem;
+    margin-right: 10px;
 }
