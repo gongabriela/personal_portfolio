@@ -37,13 +37,6 @@ h1, h2, h3, h4 {
     color: var(--cor-banana);
 }
 
-main {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 0 20px;
-    margin-top: 40px;
-}
-
 /*---------------------------------------- HEADER ----------------------------------------*/
 
 /*header grande*/
@@ -195,30 +188,30 @@ main {
     transform: translateY(-5px); 
 }
 
+/* ---------------------------------------- CSS GRID DO LAYOUT DASHBOARD ---------------------------------------- */
 
-/*---------------------------------------- SOBRE MIM ----------------------------------------*/
-.sobre-mim {
-    border: 2px solid (--cor-borda);
-    background-color: var(--cor-fundo-card);
-    border-radius: 20px;
+.layout-dashboard {
+    display: grid;
+    grid-template-columns: 280px 1fr; /* Coluna 1 (Sidebar): 280px fixos | Coluna 2 (Conteúdo): O resto do espaço (1fr) */
+    gap: 40px; /* Espaço entre a sidebar e os projetos */
+    
+    max-width: 1200px; /* Aumentámos a largura total para caber tudo */
+    margin: 40px auto; /* Centraliza a grelha na página */
+    padding: 0 20px;
+}
+
+/* Ajuste na Barra Lateral (Temporário: só para veres a coluna a aparecer) */
+.barra-lateral {
+    border: 1px dashed var(--cor-rosa); 
     padding: 20px;
+    height: fit-content; /* Altura ajusta-se ao conteúdo */
 }
 
-.sobre-mim h2 {
-    color: var(--cor-roxo-claro);
-    border-bottom: 1px solid var(--cor-borda);
-    padding-bottom: 15px;
-    margin-top: 0;
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-.sobre-mim p {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    text-align: justify;
-    color: (--cor-texto-principal);
+/* basicamente a mesma coisa que fazer na tag main mas agora quem controla é o grid */
+.conteudo-principal {
+    margin: 0; 
+    padding: 0;
+    max-width: 100%;
 }
 
 /*---------------------------------------- PROJETOS 42 ----------------------------------------*/
