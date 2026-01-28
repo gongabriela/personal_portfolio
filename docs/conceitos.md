@@ -50,3 +50,11 @@ Um container é qualquer elemento **pai** (geralmente uma ```<div>``` ou ```<sec
 ## ```<section>``` vs ```<div>```
 
 ## Implementar links com a tag <a>
+
+## tag ```<aside>```
+
+## tag ```<label>```
+
+## tag ```<select>```
+
+## tag ```<option>```

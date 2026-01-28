@@ -64,8 +64,29 @@
 
     <div class="layout-dashboard">
         <aside class="barra-lateral">
-            <h3>Menu</h3>
-            <p>filtros</p>
+            <div class="secao-filtros">
+                <div class="grupo-filtros">
+                    <label for="filtro-escola">FILTRE POR ESCOLA</label>
+                    <select id="filtro-escola" class="dropdown-escola">
+                        <option value="all">Todos os cursos</option>
+                        <option value="42">42 Porto</option>
+                        <option value="upskill">UPskill</option>
+                    </select>
+                </div>
+
+<div class="grupo-filtro">
+                    <label for="filtro-tech">FILTRE POR TECNOLOGIAS</label>
+                    <select id="filtro-tech" class="dropdown-estiloso">
+                        <option value="all">Todas as tecnologias</option>
+                        <option value="c">C Language</option>
+                        <option value="c++">C++</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="virtual machine">Virtual Machines</option>
+                        <option value="sql">SQL</option>
+                    </select>
+                </div>
+
+            </div>
         </aside>
 
         <main class="conteudo-principal">
