@@ -35,3 +35,18 @@
 
 ----------------------
 
+## Containers
+
+O header do website tem muitos elementos, pelo que foi importante aprender o conceito de containers para facilitar o alinhamento deles no CSS.
+
+** O que é um container?**
+
+Na vida real, um container é uma caixa grande onde guardas várias coisas menores para ser mais fácil transportá-las. No HTML, é exatamente a mesma coisa.
+
+Um container é qualquer elemento **pai** (geralmente uma ```<div>``` ou ```<section>```) que agrupa vários elementos **filhos** dentro dele. Um container serve para controlar, mover e estilizar um grupo de elementos de uma só vez!
+
+## The ```<nav>``` tag
+
+## ```<section>``` vs ```<div>```
+
+## Implementar links com a tag <a>

@@ -5,17 +5,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel="stylesheet" href="style.css">
+    <title>Gabriela Oliveira | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
 
     <header class="cabecalho">
-        <img src="https://github.com/gongabriela.png" alt="foto de perfil de Gabriela Oliveira" class="foto-perfil">
-        <div class="meu-texto">
-            <h1>GABRIELA OLIVEIRA</h1>
-            <p>software engineer</p>
+        <nav class="nav-bar">
+            <div class="menu-links">
+                <a href="index.html" class="link-ativo">Projects</a>
+                <a href="about.hml">About Me</a>
+            </div>
+            <div class="menu-ferramentas">
+                <a href="https://www.linkedin.com/in/gabriela-oliveira-94a216269/" target="_blank" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                
+                <a href="https://github.com/gongabriela" target="_blank" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                
+                <a href="LINK_DO_MEDIUM" target="_blank" title="Medium">
+                    <i class="fa-brands fa-medium"></i>
+                </a>
+
+                <a href="mailto:gabriela.oliveira1031@gmail.com" title="Enviar Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                        
+            <span class="divisor">|</span>
+            <button id="btn-lang" class="btn-toggle">ENG</button>
+            <button id="btn-theme" class="btn-toggle">☀️</button>
+            </div>
+        </nav>
+
+        <div class="perfil id="info-perfil">
+            <img src="https://github.com/gongabriela.png" alt="foto de perfil de Gabriela Oliveira" class="foto-perfil">
+            <div class="texto-perfil">
+                <h1>GABRIELA OLIVEIRA</h1>
+                <p>software engineer</p>
+                <div class="github-stats">
+                    <img
+                        height="160em"
+                        src="https://awesome-github-stats.azurewebsites.net/user-stats/gongabriela?cardType=level&theme=tokyonight&fontFamily=&preferLogin=false"
+                        alt="github stats"
+                    >
+                    <img
+                        height="160em"
+                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=gongabriela&layout=compact&theme=tokyonight"
+                        alt="top languages stats"
+                    >
+                </div>
+            </div>
         </div>
     </header>
 
