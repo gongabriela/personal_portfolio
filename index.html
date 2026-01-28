@@ -65,7 +65,7 @@
     <div class="layout-dashboard">
         <aside class="barra-lateral">
             <div class="secao-filtros">
-                <div class="grupo-filtros">
+                <div class="grupo-filtro">
                     <label for="filtro-escola">FILTRE POR ESCOLA</label>
                     <select id="filtro-escola" class="dropdown-escola">
                         <option value="all">Todos os cursos</option>
@@ -74,9 +74,9 @@
                     </select>
                 </div>
 
-<div class="grupo-filtro">
+                <div class="grupo-filtro">
                     <label for="filtro-tech">FILTRE POR TECNOLOGIAS</label>
-                    <select id="filtro-tech" class="dropdown-estiloso">
+                    <select id="filtro-tech" class="dropdown-tecnologias">
                         <option value="all">Todas as tecnologias</option>
                         <option value="c">C Language</option>
                         <option value="c++">C++</option>
@@ -85,8 +85,18 @@
                         <option value="sql">SQL</option>
                     </select>
                 </div>
-
             </div>
+
+            <div class="secao-projetos">
+                <h3>Projetos</h3>
+                <ul class="lista-projetos">
+                    <li class="item-projeto ativo" data-id="cub3d">
+                        <span>Cub3D</span>
+                        <small>Mar 2024 • 42 Porto</small>
+                    </li>
+                </ul>
+            </div>
+
         </aside>
 
         <main class="conteudo-principal">

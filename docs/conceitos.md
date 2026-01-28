@@ -58,3 +58,62 @@ Um container é qualquer elemento **pai** (geralmente uma ```<div>``` ou ```<sec
 ## tag ```<select>```
 
 ## tag ```<option>```
+
+## tag ```<ul>```
+
+## tag ```<li>```
+
+## aplicar duas classes no mesmo elemento
+
+``` HTML
+    <li class="item-projeto ativo" data-id="cub3d">
+        <span>Cub3D</span>
+        <small>Mar 2024 • 42 Porto</small>
+    </li>
+```
+
+## tag ```<span>```
+
+``` HTML 
+    <li class="item-projeto">
+        <span>Cub3D</span>               <small>Mar 2024</small>          </li>
+```
+
+Usámos o ```<span>``` à volta do "Cub3D" apenas para podermos ir ao CSS e dizer: "O que estiver dentro do span, mete em Negrito e com letra tamanho 1rem."
+
+Se não tivéssemos o ```span```, o texto "Cub3D" ficaria solto e não teríamos como mudar a fonte só dele sem afetar a data que está por baixo.
+
+## tag ```<small>```
+
+## O uso do label
+
+Para estilizar os dropdown menus, eu uso do label na estrutura do html e depois o chamo no arquivo CSS. 
+
+``` HTML 
+    <div class="grupo-filtro">
+        
+        <label>FILTER BY SCHOOL</label>  <-- ESTE recebe o estilo!
+
+        <select>...</select>
+
+    </div>
+```
+``` CSS
+    .grupo-filtro label {
+        font-size: 0.75rem;
+        color: var(--cor-roxo-claro);
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+```
+
+Lê-se da direita para a esquerda, ou seja: "Estiliza todas as tags ```<label>``` QUE ESTEJAM DENTRO de um elemento com a classe ```.grupo-filtro```."
+
+Ao escreveres .grupo-filtro label no CSS, estás a dizer: "Eu não quero pintar todos os labels do site. Eu quero pintar apenas os que estão "guardados" dentro da caixa dos filtros."
+
+2. Por que fazemos isto? Por SEGURANÇA. 
+Imagina que amanhã crias um Formulário de Contacto no rodapé do site. Lá também vais ter um ```<label>O teu Email:</label>```.
+
+Se usasses apenas ```label { ... }``` no CSS: O label do formulário de contacto ia ficar minúsculo, roxo e com letras garrafais, igual ao do filtro. Ia ficar estranho!
+
+Usando ```.grupo-filtro label```: O CSS protege os outros labels. Ele sabe que aquele estilo específico é exclusivo para a barra lateral.

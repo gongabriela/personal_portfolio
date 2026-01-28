@@ -199,12 +199,110 @@ h1, h2, h3, h4 {
     margin: 40px auto; /* Centraliza a grelha na página */
     padding: 0 20px;
 }
+/*---------------------------------------- 6. BARRA LATERAL (SIDEBAR) ----------------------------------------*/
 
-/* Ajuste na Barra Lateral (Temporário: só para veres a coluna a aparecer) */
 .barra-lateral {
-    border: 1px dashed var(--cor-rosa); 
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 0;
+
+    /*configs pra barra ficar fixa*/
     height: fit-content; /* Altura ajusta-se ao conteúdo */
+    position: sticky; /* Ela cola na tela */
+    top: 110px; /* Cola 110px abaixo do topo (para não bater na Header que já tem uns 90px) */
+}
+
+/*filtros*/
+.grupo-filtro {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/**/
+.grupo-filtro label {
+    font-size: 0.75REM;
+    color: var(--cor-roxo-claro);
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+.dropdown-escola, .dropdown-tecnologias {
+    padding: 12px;
+    background-color: var(--cor-fundo-card-esquerdo);
+    color: var(--cor-texto-principal);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    font-family: var(--fonte-texto);
+    font-size: 0.9rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dropdown-escola, .dropdown-tecnologias focus {
+    border-color: var(--cor-rosa);
+}
+
+/*---lista de projetos no menu lateral---*/
+.secao-projetos h3 {
+    color: var(--cor-banana);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 3px solid var(--cor-banana);
+}
+
+.lista-projetos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-projeto {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid transparent; 
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-projeto span {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--cor-texto-principal);
+}
+
+.item-projeto small {
+    font-size: 0.8rem;
+    color: var(--cor-borda);
+    margin-top: 4px;
+}
+
+.item-projeto:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateX(5px);
+}
+
+.item-projeto.ativo {
+    background-color: rgba(139, 233, 253, 0.1);
+    border-color: var(--cor-azul-ceu);
+}
+
+.item-projeto.ativo span {
+    color: var(--cor-azul-ceu);
+}
+
+.item-projeto.ativo small {
+    color: var(--cor-azul-ceu);
+    opacity: 0.7;
 }
 
 /* basicamente a mesma coisa que fazer na tag main mas agora quem controla é o grid */
