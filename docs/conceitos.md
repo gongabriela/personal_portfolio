@@ -1,21 +1,26 @@
-# WIKI
+# WIKI - Conceitos de HTML e CSS
 
-## Estrutrura Principal do HTML
+Este documento serve como guia de estudo e documentação sobre os conceitos teóricos e práticos aplicados no desenvolvimento deste portfólio.
 
-``` CSS
+---
 
+## 1. Estrutura Básica do HTML
+
+Todo o documento HTML segue uma estrutura padrão ("boilerplate") que diz ao navegador como interpretar o código.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Links para CSS e Fontes ficam aqui -->
 </head>
 <body>
-    
+    <!-- O conteúdo visível vai aqui -->
 </body>
 </html>
-
 ```
 
 ## Header
@@ -146,3 +151,34 @@ Existem variações do estilo no footer:
 ## O uso do CSS Grid no projeto
 
 ## O uso do flexbox no projeto
+
+
+----
+
+1. Estrutura e Semântica HTML
+Estrutura Básica (Boilerplate): O esqueleto de qualquer página (html, head, body).
+Semântica: A diferença entre div (genérico) e tags com significado (header, nav, section, aside, footer).
+Containers: O conceito de agrupar elementos em "caixas" para estilização.
+2. Fundamentos de CSS
+Variáveis CSS (:root): Como criar uma paleta de cores reutilizável.
+Unidades de Medida: A diferença crucial entre px (fixo) e rem (relativo/acessível).
+Seletores: Como selecionar elementos específicos (Classes, Múltiplas Classes e Seletores Descendentes como .grupo-filtro label).
+Box Model: Margens, Bordas e Padding.
+3. Layout e Posicionamento
+Flexbox: Alinhamento numa direção (usado no Header, Nav e Footer).
+CSS Grid: Layout em duas dimensões (usado na estrutura principal Dashboard e nos Cards).
+Posicionamento: Como funciona o position: sticky (Barra Lateral e Menu fixo) e z-index.
+4. Elementos de Texto e Mídia
+Tipografia e Texto: Tags h1-h6, p, e a diferença entre span (estilo) e small (detalhe).
+Listas: ul e li (usadas nos menus e listas de projetos).
+Links: A tag a e atributos como target="_blank".
+Imagens e Ícones: Tag img e o uso de bibliotecas como FontAwesome (<i>).
+5. Estilização Avançada e Efeitos
+Cores e Vidro: Gradientes, transparência (rgba) e o efeito Glassmorphism (backdrop-filter).
+Sombras e Bordas: box-shadow (efeito neon) e border-radius.
+6. Interatividade e Formulários
+Animações: Como usar transition, transform e o estado :hover para criar movimento.
+Formulários: Estrutura dos filtros (label, select, option).
+Estados: O uso de classes como .ativo para marcar o item selecionado.
+7. Responsividade
+Media Queries: Como o site se adapta a tablets e telemóveis.
