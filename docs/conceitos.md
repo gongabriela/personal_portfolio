@@ -121,6 +121,7 @@ Usando ```.grupo-filtro label```: O CSS protege os outros labels. Ele sabe que a
 ## Brainstorming e ideias
 
 - criar uma página "além do código"/"beyond de code"
+- o filtre por tecnologias nao ta rosa como o filtre por escola
 
 ## o "fa" - font awesome que aparece em alguns elementos
 
