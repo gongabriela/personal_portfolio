@@ -19,6 +19,9 @@ Based on the project requirements, the website includes:
 - **Footer**: Contact info and links.
 
 ## How to Access
+You can view the live project on GitHub Pages here: [Live Demo](https://gongabriela.github.io/personal_portfolio/)
+
+To run locally:
 1. Clone the repository.
 2. Open the `index.html` file in your preferred web browser.
 
@@ -51,6 +54,9 @@ Baseado nos requisitos do projeto, o website inclui:
 - **Footer**: Informações de contato e links.
 
 ## Como Acessar
+Você pode visualizar o projeto online no GitHub Pages aqui: [Live Demo](https://gongabriela.github.io/personal_portfolio/)
+
+Para rodar localmente:
 1. Clone este repositório.
 2. Abra o arquivo `index.html` no seu navegador de preferência.
 
