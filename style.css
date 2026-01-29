@@ -518,3 +518,153 @@ h1, h2, h3, h4 {
         text-align: center;
     }
 }
+
+/*---------------------------------------- PAGINA ABOUT ME ----------------------------------------*/
+
+.about-hero {
+    margin-bottom: 60px;  
+}
+
+.hero-content {
+    display: flex;
+    gap: 40px;
+    /*align-items: flex-start; n ta resolvendo */
+    margin-bottom: 60px;
+    flex-wrap: wrap; /*se tiver no celular a foto vai ficar em cima do texto*/
+}
+
+.foto-container img {
+    width: 280px;      /* Um pouco maior, como na imagem */
+    height: 320px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 20px; /*resolveu e alinhou img com o texto!!*/
+    
+    /* O Efeito NEON da imagem (Borda Rosa Brilhante) */
+    border: 3px solid var(--cor-rosa);
+    box-shadow: 0 0 30px rgba(255, 149, 214, 0.4); 
+    
+    transition: transform 0.3s;
+}
+
+.foto-container img:hover {
+    transform: scale(1.02); /* Pequeno zoom ao passar o rato */
+}
+
+.bio-texto {
+    flex: 1;
+}
+
+.titulo-neon {
+    font-size: 3rem;   /* Título grande */
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    
+    /* Sombra de texto para dar brilho */ 
+    text-shadow: 0 0 10px rgba(255, 233, 125, 0.3);
+}
+
+.destaque-texto {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* O texto normal da bio */
+.bio-texto p {
+    color: var(--cor-texto-principal);
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify; /* Texto justificado fica mais elegante */
+}
+
+.texto-rosa {
+    color: var(--cor-rosa);
+    font-weight: 700;
+}
+
+/*widgets laterais do topo da pagina about*/
+
+.barra-lateral-about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+    /* Se precisares de ajustar a largura ou posição, é aqui */
+}
+
+.widget-about {
+    background-color: var(--cor-fundo-card-esquerdo);
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px; /* Cantos bem arredondados */
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.widget-about:hover {
+    border-color: var(--cor-roxo-claro);
+    transform: translateY(-2px);
+}
+
+/* Títulos (Atualmente / Idiomas) */
+.widget-titulo {
+    color: var(--cor-banana); /* Amarelo */
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    /* Aquele detalhe da bolinha amarela antes do título */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- LISTA "ATUALMENTE" --- */
+.lista-status {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-status li {
+    display: flex;
+    align-items: center; /* Alinha ícone e texto */
+    gap: 15px;
+    margin-bottom: 15px;
+    color: var(--cor-texto-principal);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.icone-status {
+    color: var(--cor-roxo-claro); /* Ícones roxos */
+    font-size: 1.1rem;
+    width: 20px; /* Garante que todos os ícones ocupam o mesmo espaço */
+    text-align: center;
+}
+
+/* --- BARRAS DE IDIOMAS --- */
+.skill-bar {
+    margin-bottom: 15px;
+}
+
+.skill-bar .info {
+    display: flex;
+    justify-content: space-between; /*so da para usar com o display flex ein nao esquecer*/
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--cor-texto-principal);
+}
+
+.skill-bar .nivel {
+    color: var(--cor-roxo-claro); /* Texto do nível (ex: Nativo) em roxo */
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
