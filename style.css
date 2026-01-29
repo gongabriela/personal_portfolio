@@ -430,3 +430,91 @@ h1, h2, h3, h4 {
     font-size: 1rem;
     margin-right: 10px;
 }
+
+/*---------------------------------------- RODAPÉ (FOOTER) ----------------------------------------*/
+
+.rodape {
+    margin-top: 80px;
+    border-top: 1px solid var(--cor-borda);
+    padding: 40px 20px 20px 20px; /* Mais espaço em cima */
+    background-color: rgba(27, 24, 44, 0.5);
+    font-size: 0.9rem;
+}
+
+/* Container Flex para a parte de cima (3 colunas) */
+.rodape-conteudo {
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza no ecrã */
+    display: flex;
+    justify-content: space-between; /* Empurra um para cada ponta e um no meio */
+    align-items: center;
+    flex-wrap: wrap; /* Se o ecrã for pequeno, quebra linha */
+    gap: 20px;
+    padding-bottom: 30px; /* Espaço antes do copyright */
+}
+
+/* 1. Lado Esquerdo (Texto) */
+.rodape-info strong {
+    color: var(--cor-banana); /* Destaque no nome */
+}
+
+/* 2. Centro (Links) */
+.rodape-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.rodape-menu a {
+    color: var(--cor-texto-principal);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.rodape-menu a:hover {
+    color: var(--cor-rosa);
+}
+
+/* 3. Lado Direito (Botões Sociais) */
+.rodape-social {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px; /* Cantos ligeiramente arredondados */
+    color: var(--cor-azul-ceu);
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s;
+}
+
+.btn-footer:hover {
+    border-color: var(--cor-rosa);
+    color: var(--cor-rosa);
+    transform: translateY(-2px);
+}
+
+/* Parte de Baixo (Copyright) */
+.rodape-copyright {
+    border-top: 1px solid var(--cor-borda); /* Linha divisória fina */
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--cor-borda); /* Cinzento escuro */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+/* RESPONSIVIDADE: Para telemóvel, empilha tudo */
+@media (max-width: 768px) {
+    .rodape-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+}

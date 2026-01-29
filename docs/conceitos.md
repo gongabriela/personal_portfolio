@@ -117,3 +117,31 @@ Imagina que amanhã crias um Formulário de Contacto no rodapé do site. Lá tam
 Se usasses apenas ```label { ... }``` no CSS: O label do formulário de contacto ia ficar minúsculo, roxo e com letras garrafais, igual ao do filtro. Ia ficar estranho!
 
 Usando ```.grupo-filtro label```: O CSS protege os outros labels. Ele sabe que aquele estilo específico é exclusivo para a barra lateral.
+
+## Brainstorming e ideias
+
+- criar uma página "além do código"/"beyond de code"
+
+## o "fa" - font awesome que aparece em alguns elementos
+
+O **`fa`** vem de **F**ont **A**wesome.
+
+Esta linha de código no `<head>` do HTML:
+```CSS
+<link rel="stylesheet" href="...font-awesome...">
+``` 
+É instalar uma "biblioteca de símbolos" no seu site. O `fa` é o prefixo que diz ao navegador: *"Ei, esta classe pertence à biblioteca do FontAwesome, não é uma classe minha (Gabriela)"*.
+
+Existem variações do estilo no footer:
+
+* **`fa-brands`**: Para logótipos de marcas (LinkedIn, GitHub, Instagram).
+* **`fa-solid`**: Para ícones preenchidos e grossos (como o envelope ✉️ ou o coração ❤️).
+* **`fa-regular`**: Para ícones apenas com contorno (mais fininhos).
+
+## The ```<i>``` tag
+
+## Como eu faço os botoes/icones trocarem de cor ao passar o mouse e "pular" pra cima
+
+## O uso do CSS Grid no projeto
+
+## O uso do flexbox no projeto
