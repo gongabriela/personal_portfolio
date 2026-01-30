@@ -100,10 +100,21 @@ h1, h2, h3, h4 {
     transition: transform 0.3s, color 0.3s; /* animação de movimento */
 }
 
-/* Efeito Hover (Quando passa o mouse) */
-.menu-ferramentas a:hover {
-    color: var(--cor-rosa);
-    transform: translateY(-3px); /* O ícone "pula" um pouquinho para cima */
+/* 2. O HOVER (Protegido: Só funciona se tiveres rato) */
+/* Isto resolve o problema do ícone ficar "preso" no rosa no telemóvel */
+@media (hover: hover) {
+    .menu-ferramentas a:hover {
+        color: var(--cor-rosa);
+        transform: translateY(-3px); /* O "pulo" para cima */
+    }
+}
+
+/* 3. O ACTIVE (O feedback de clique/toque para TODOS) */
+/* Coloca isto LOGO ABAIXO do hover. Não precisa de media query. */
+.menu-ferramentas a:active {
+    color: var(--cor-rosa);       /* Fica rosa enquanto seguras */
+    transform: scale(0.90);       /* Encolhe um pouquinho (efeito de botão físico) */
+    transition: transform 0.1s;   /* Uma transição mais rápida para parecer ágil */
 }
 
 .divisor {
@@ -127,7 +138,7 @@ h1, h2, h3, h4 {
     color: var(--cor-rosa);
 }
 
-/*---------------------------------------- 5. PERFIL (ainda na header) ----------------------------------------*/
+/*---------------------------------------- PERFIL (ainda na header) ----------------------------------------*/
 .perfil {
     padding: 60px 20px 40px 20px;
     text-align: center;
@@ -195,7 +206,7 @@ h1, h2, h3, h4 {
     grid-template-columns: 280px 1fr; /* Coluna 1 (Sidebar): 280px fixos | Coluna 2 (Conteúdo): O resto do espaço (1fr) */
     gap: 40px; /* Espaço entre a sidebar e os projetos */
     
-    max-width: 1200px; /* Aumentámos a largura total para caber tudo */
+    max-width: 1200px; /* Aumentar a largura total para caber tudo */
     margin: 40px auto; /* Centraliza a grelha na página */
     padding: 0 20px;
 }
