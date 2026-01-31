@@ -191,6 +191,7 @@ h1, h2, h3, h4 {
 .github-stats img {
     height: 150px; 
     width: auto;
+    max-width: 100%;
     filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
     transition: transform 0.3s;
 }
@@ -751,8 +752,47 @@ h1, h2, h3, h4 {
         font-size: 2rem;
     }
 
+    .github-stats img {
+        height: auto;
+        width: 70%;
+        max-width: 100%;
+    }
     /* Ajuste na margem do conteúdo */
     .layout-dashboard {
         padding: 0 10px; /* Margem lateral pequena para não colar no ecrã */
+    }
+
+    /* transformar as duas colunas do card em uma */
+    .projeto-42 {
+        grid-template-columns: 1fr; /* empilha as 2 colunas uma em cima da outra */
+        height: auto; /* Deixa a altura crescer conforme o texto */
+    }
+
+    .lado-esquerdo {
+        border-bottom: 3px solid var(--cor-borda); /* Adiciona linha pra dividir as  a coluna da img da do texto*/
+        padding: 30px 20px;
+    }
+
+    .img-projeto-42 {
+        max-width: 100%; /* Garante que a imagem não vaza */
+        width: 250px;    /* Tamanho ideal para o telemóvel */
+    }
+
+    .lado-direito {
+        padding: 20px; /* Menos padding  pra ficar mais harmonioso no mobile*/
+    }
+
+    .info-topo h3 {
+        font-size: 1.5rem; /* Diminui um pouco o título */
+        text-align: center;
+    }
+    
+    .definicao {
+        text-align: center;
+    }
+     /*Corrigir o grid do texto, para colocar o conceito em baixo da explicação em vez de lado a lado*/
+    .info-meio {
+        grid-template-columns: 1fr; /* usamos isso dnv para transformar td numa coluna só */
+        gap: 30px;
     }
 }
