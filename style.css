@@ -4,19 +4,19 @@
 
 :root {
     /* Fundos */
-    --cor-fundo-pagina: #1b182c; /* Roxo Profundo (Deep Space) */
+    --cor-fundo-pagina: #1b182c; /* Roxo escuro */
     --cor-fundo-card: #282440; 
     --cor-fundo-card-esquerdo: #211e33;  /* Roxo um pouco mais claro para destacar os cards */
     --cor-borda: #454158;        /* Roxo acinzentado para bordas subtis */
     
     /* Cores de Destaque */
-    --cor-rosa: #ff95d6;         /* Rose Pink (Para bordas principais e destaques) */
-    --cor-azul-ceu: #8be9fd;     /* Sky Blue (Para links, botões e ícones) */
-    --cor-banana: #ffe97d;       /* Banana Yellow (Para Títulos principais) */
-    --cor-roxo-claro: #bd93f9;   /* Light Purple (Para subtítulos) */
+    --cor-rosa: #ff95d6;         /* rosa (para bordas principais e destaques) */
+    --cor-azul-ceu: #8be9fd;     /* azul céu (para links, botões e ícones) */
+    --cor-banana: #ffe97d;       /* amarelo banana (para títulos principais) */
+    --cor-roxo-claro: #bd93f9;   /* roxo claro (para subtítulos) */
     
     /* Texto */
-    --cor-texto-principal: #e0def4; /* Branco sujo/acinzentado (Melhor para leitura) */
+    --cor-texto-principal: #e0def4; /*branco gelo (melhor para leitura) */
     
     /* Fontes */
     --fonte-titulo: 'Outfit', sans-serif;
@@ -81,10 +81,10 @@ h1, h2, h3, h4 {
 
 .menu-links a:hover,
 .menu-links a.link-ativo {
-    color: var(--cor-rosa); /* Destaque Rosa */
+    color: var(--cor-rosa);
 }
 
-/* Ferramentas da Direita (Ícones e Botões) */
+/* Ferramentas da direita (icones e botões) */
 .menu-ferramentas {
     display: flex;
     align-items: center;
@@ -94,14 +94,13 @@ h1, h2, h3, h4 {
 /* Estilo para os ícones */
 .menu-ferramentas a {
     color: var(--cor-azul-ceu);
-    font-size: 1.2rem;       /* tamanho adequado para o ícone ficar visível */
+    font-size: 1.2rem;
     display: flex;           /* Ajuda a alinhar o ícone verticalmente ao centro */
     align-items: center;
     transition: transform 0.3s, color 0.3s; /* animação de movimento */
 }
 
-/* 2. O HOVER (Protegido: Só funciona se tiveres rato) */
-/* Isto resolve o problema do ícone ficar "preso" no rosa no telemóvel */
+/* se tiver mouse, no celular essa regra e ignorada */
 @media (hover: hover) {
     .menu-ferramentas a:hover {
         color: var(--cor-rosa);
@@ -109,10 +108,9 @@ h1, h2, h3, h4 {
     }
 }
 
-/* 3. O ACTIVE (O feedback de clique/toque para TODOS) */
-/* Coloca isto LOGO ABAIXO do hover. Não precisa de media query. */
+/* pro telefone: enquanto o dedo ta pressionando no icone ele fica rosa */
 .menu-ferramentas a:active {
-    color: var(--cor-rosa);       /* Fica rosa enquanto seguras */
+    color: var(--cor-rosa);
     transform: scale(0.90);       /* Encolhe um pouquinho (efeito de botão físico) */
     transition: transform 0.1s;   /* Uma transição mais rápida para parecer ágil */
 }
@@ -177,7 +175,7 @@ h1, h2, h3, h4 {
     font-weight: 600;
 }
 
-/* Área dos Stats (github-stats) */
+/* Área dos stats (github-stats) */
 .github-stats {
     display: flex;
     flex-direction: row;      
@@ -211,7 +209,7 @@ h1, h2, h3, h4 {
     margin: 40px auto; /* Centraliza a grelha na página */
     padding: 0 20px;
 }
-/*---------------------------------------- 6. BARRA LATERAL (SIDEBAR) ----------------------------------------*/
+/* ---------------------------------------- BARRA LATERAL ---------------------------------------- */
 
 .barra-lateral {
     display: flex;
@@ -225,7 +223,6 @@ h1, h2, h3, h4 {
     top: 110px; /* Cola 110px abaixo do topo (para não bater na Header que já tem uns 90px) */
 }
 
-/*filtros*/
 .grupo-filtro {
     margin-bottom: 20px;
     display: flex;
@@ -233,7 +230,6 @@ h1, h2, h3, h4 {
     gap: 8px;
 }
 
-/**/
 .grupo-filtro label {
     font-size: 0.75REM;
     color: var(--cor-roxo-claro);
@@ -351,7 +347,7 @@ h1, h2, h3, h4 {
     border-right: 3px solid var(--cor-borda); /* Linha divisória vertical */
     padding: 20px;
     
-    /* Usamos FLEX para centrar a imagem e o botão verticalmente */
+    /* Utilizacao do FLEX para centrar a imagem e o botão verticalmente */
     display: flex;
     flex-direction: column; /* Um embaixo do outro */
     align-items: center;    /* Centrado horizontalmente */
@@ -404,8 +400,7 @@ h1, h2, h3, h4 {
     margin-top: 5px;
 }
 
-/* 4. O MEIO (grid dentro de grid) */
-/* divisão: explicação à esquerda, conceitos à direita */
+/* Criamos um terceiro grid para dividir a explicacao para um lado (esquerda), e os conceitos do outro (direita) */
 .info-meio {
     display: grid;
     grid-template-columns: 2fr 1fr; /* Explicação ocupa o dobro do espaço dos conceitos */
@@ -453,7 +448,7 @@ h1, h2, h3, h4 {
     font-size: 0.9rem;
 }
 
-/* Container Flex para a parte de cima (3 colunas) */
+/* Container Flex (3 colunas) */
 .rodape-conteudo {
     max-width: 1200px;
     margin: 0 auto; /* Centraliza no ecrã */
@@ -511,7 +506,7 @@ h1, h2, h3, h4 {
     transform: translateY(-2px);
 }
 
-/* Parte de Baixo (Copyright) */
+/* Parte do copyright */
 .rodape-copyright {
     border-top: 1px solid var(--cor-borda); /* Linha divisória fina */
     padding-top: 20px;
@@ -523,7 +518,7 @@ h1, h2, h3, h4 {
     opacity: 0.7;
 }
 
-/* RESPONSIVIDADE: Para telemóvel, empilha tudo */
+/* Responsividade: para telemóvel, empilha tudo */
 @media (max-width: 768px) {
     .rodape-conteudo {
         flex-direction: column;
@@ -531,7 +526,7 @@ h1, h2, h3, h4 {
     }
 }
 
-/*---------------------------------------- PAGINA ABOUT ME ----------------------------------------*/
+/* ---------------------------------------- PAGINA ABOUT ME ---------------------------------------- */
 
 .about-hero {
     margin-bottom: 60px;  
@@ -540,7 +535,6 @@ h1, h2, h3, h4 {
 .hero-content {
     display: flex;
     gap: 40px;
-    /*align-items: flex-start; n ta resolvendo */
     margin-bottom: 60px;
     flex-wrap: wrap; /*se tiver no celular a foto vai ficar em cima do texto*/
 }
@@ -552,7 +546,7 @@ h1, h2, h3, h4 {
     border-radius: 20px;
     margin-top: 20px; /*resolveu e alinhou img com o texto!!*/
     
-    /* O Efeito NEON da imagem (Borda Rosa Brilhante) */
+    /* efeito NEON da imagem */
     border: 3px solid var(--cor-rosa);
     box-shadow: 0 0 30px rgba(255, 149, 214, 0.4); 
     
@@ -604,7 +598,6 @@ h1, h2, h3, h4 {
     flex-direction: column;
     gap: 20px;
     margin-top: 10px;
-    /* Se precisares de ajustar a largura ou posição, é aqui */
 }
 
 .widget-about {
@@ -681,7 +674,7 @@ h1, h2, h3, h4 {
     opacity: 0.9;
 }
 
-/*---------------------------------------- 13. RESPONSIVIDADE (CORRIGIDO) ----------------------------------------*/
+/* ---------------------------------------- RESPONSIVIDADE ---------------------------------------- */
 
 /* TABLET E ECRÃ DIVIDIDO (Abaixo de 1024px) */
 @media (max-width: 1024px) {
@@ -715,7 +708,7 @@ h1, h2, h3, h4 {
     .hero-content {
         /* Garante que o texto vai para baixo da foto se não houver espaço */
         flex-direction: column; 
-        align-items: center !important;
+        align-items: center;
     }
 
     .foto-container {
